@@ -85,10 +85,10 @@
 	</dependencies>
 
 	<distributionManagement>
-  <releasesRepository>
-    <id>nexus</id>
-    <url>http://35.154.153.70:8081/nexus/content/repositories/releases/</url>
-  </releasesRepository>
+  <repository>
+    <id>releases</id>
+    <url>http://35.154.153.70:8081/nexus/content/repositories/releases</url>
+  </repository>
 </distributionManagement>
 	<build>
 		<plugins>

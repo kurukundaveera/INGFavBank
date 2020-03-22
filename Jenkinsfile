@@ -21,11 +21,12 @@ pipeline {
                 sh 'sudo git commit -m "Updated pom" pom.xml'
                 sh 'sudo git push https://Deeps333:Deepanshu333@github.com/Deeps333/INGFavBank.git HEAD:mybranch'
                 }       }
-            post { 
-             always { 
+            
+	}
+         post { 
+        always { 
             cleanWs()
         }
     }
-       
-	}}
+}
       

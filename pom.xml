@@ -6,11 +6,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository  -->
 	</parent>
 	<groupId>com.hcl</groupId>
 	<artifactId>FavoriteBank</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>2.0.20-SNAPSHOT</version>
 	<name>FavoriteBank</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -84,6 +84,24 @@
 
 	</dependencies>
 
+<scm>
+		<connection>scm:https://github.com/Deeps333/INGFavBank.git</connection>
+		<url>https://github.com/Deeps333/INGFavBank.git</url>
+                <developerConnection>scm:git:https://github.com/Deeps333/INGFavBank.git</developerConnection>
+		<tag>HEAD</tag>
+		
+</scm>
+	
+<distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://13.127.91.122:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+  <repository>
+    <id>nexus-releases</id>
+    <url>http://13.127.91.122:8081/nexus/content/repositories/releases/</url>
+  </repository>
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
